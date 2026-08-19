@@ -106,16 +106,17 @@ const Home = () => {
             <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
                 {/* Background with parallax effect */}
                 <div
-                    className="absolute inset-0 bg-cover bg-center scale-105"
+                    className="absolute inset-0"
                     style={{
                         backgroundImage: 'url(/fythlanding.png)',
                         backgroundAttachment: 'fixed',
+                        backgroundSize: '150% auto',
+                        backgroundPosition: 'right center',
+                        backgroundRepeat: 'no-repeat',
                     }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/20" />
 
-                {/* Futuristic glowing grid elements */}
-                <div className="absolute right-[10%] top-[20%] w-[300px] h-[300px] border border-pink/40 shadow-[0_0_30px_rgba(236,72,153,0.2)] rotate-45 pointer-events-none hidden lg:block" />
 
                 <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
                     <img src="/logo.jpg" alt="Fyth Clothings" className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mx-auto mb-6 shadow-2xl border-4 border-white/20" />

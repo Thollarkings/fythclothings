@@ -20,7 +20,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-[1200px]">
+    <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-[1600px]">
       <div className={`glass rounded-full px-8 py-3 flex items-center justify-between transition-shadow duration-300 ${scrolled ? 'shadow-xl shadow-black/20' : ''}`}>
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">

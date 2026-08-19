@@ -164,7 +164,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="Your name"
                   />
                 </div>
@@ -183,7 +183,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -201,7 +201,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="+234 XXX XXX XXXX"
                   />
                 </div>
@@ -220,7 +220,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="How can we help?"
                   />
                 </div>

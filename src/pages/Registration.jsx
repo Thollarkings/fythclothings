@@ -205,7 +205,7 @@ const Registration = () => {
                       value={formData.fullName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Enter your full name"
                     />
                     {errors.fullName && <p className="text-red-600 text-sm mt-1">{errors.fullName}</p>}
@@ -222,7 +222,7 @@ const Registration = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="+234 XXX XXX XXXX"
                     />
                     {errors.phone && <p className="text-red-600 text-sm mt-1">{errors.phone}</p>}
@@ -239,7 +239,7 @@ const Registration = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="your@email.com"
                     />
                     {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
@@ -255,7 +255,7 @@ const Registration = () => {
                       name="dateOfBirth"
                       value={formData.dateOfBirth}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     />
                   </div>
 
@@ -269,7 +269,7 @@ const Registration = () => {
                       name="residentialAddress"
                       value={formData.residentialAddress}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Your full address"
                     />
                   </div>
@@ -284,7 +284,7 @@ const Registration = () => {
                       name="occupation"
                       value={formData.occupation}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Your current occupation"
                     />
                   </div>
@@ -300,7 +300,7 @@ const Registration = () => {
                       value={formData.emergencyContactName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Contact person's name"
                     />
                     {errors.emergencyContactName && <p className="text-red-600 text-sm mt-1">{errors.emergencyContactName}</p>}
@@ -317,7 +317,7 @@ const Registration = () => {
                       value={formData.emergencyContactPhone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="+234 XXX XXX XXXX"
                     />
                     {errors.emergencyContactPhone && <p className="text-red-600 text-sm mt-1">{errors.emergencyContactPhone}</p>}
@@ -376,7 +376,7 @@ const Registration = () => {
                         value={formData.sewingWhereLearned}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                        className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                         placeholder="e.g., Self-taught, Course, Family member, etc."
                       />
                       {errors.sewingWhereLearned && <p className="text-red-600 text-sm mt-1">{errors.sewingWhereLearned}</p>}
@@ -393,7 +393,7 @@ const Registration = () => {
                       value={formData.currentLevel}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     >
                       <option value="">Select your level</option>
                       {levelOptions.map((level) => (
@@ -415,7 +415,7 @@ const Registration = () => {
                       value={formData.currentSewingSkills}
                       onChange={handleChange}
                       rows="4"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none resize-y"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none resize-y text-black"
                       placeholder="Describe your current sewing abilities and projects"
                     ></textarea>
                   </div>
@@ -463,7 +463,7 @@ const Registration = () => {
                       onChange={handleChange}
                       required
                       rows="4"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none resize-y"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none resize-y text-black"
                       placeholder="Describe what you hope to achieve through this training"
                     ></textarea>
                     {errors.mainTrainingGoal && <p className="text-red-600 text-sm mt-1">{errors.mainTrainingGoal}</p>}
@@ -487,7 +487,7 @@ const Registration = () => {
                       value={formData.trainingType}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     >
                       <option value="">Select training type</option>
                       {trainingTypeOptions.map((type) => (
@@ -509,7 +509,7 @@ const Registration = () => {
                       value={formData.preferredDays}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     >
                       <option value="">Select preferred days</option>
                       <option value="Monday">Monday</option>
@@ -534,7 +534,7 @@ const Registration = () => {
                       value={formData.preferredTime}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     >
                       <option value="">Select preferred time</option>
                       <option value="Morning (9AM - 12PM)">Morning (9AM - 12PM)</option>
@@ -555,7 +555,7 @@ const Registration = () => {
                       value={formData.preferredDuration}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     >
                       <option value="">Select duration</option>
                       <option value="1 month">1 month</option>
@@ -689,7 +689,7 @@ const Registration = () => {
                       value={formData.trainingFee}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Enter training fee"
                     />
                     {errors.trainingFee && <p className="text-red-600 text-sm mt-1">{errors.trainingFee}</p>}
@@ -706,7 +706,7 @@ const Registration = () => {
                       value={formData.amountPaid}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Enter amount paid"
                     />
                     {errors.amountPaid && <p className="text-red-600 text-sm mt-1">{errors.amountPaid}</p>}
@@ -722,7 +722,7 @@ const Registration = () => {
                       name="balance"
                       value={`₦${calculateBalance()}`}
                       readOnly
-                      className="w-full px-4 py-3 border border-gray-300 rounded bg-gray-50 text-gray-600"
+                      className="w-full px-4 py-3 border border-gray-300 rounded bg-gray-50 text-black"
                       placeholder="Balance will be calculated"
                     />
                   </div>
@@ -738,7 +738,7 @@ const Registration = () => {
                       value={formData.paymentDate}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     />
                     {errors.paymentDate && <p className="text-red-600 text-sm mt-1">{errors.paymentDate}</p>}
                   </div>
@@ -753,7 +753,7 @@ const Registration = () => {
                       value={formData.paymentMethod}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     >
                       <option value="">Select payment method</option>
                       {paymentMethodOptions.map((method) => (
@@ -810,7 +810,7 @@ const Registration = () => {
                       value={formData.studentName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Enter your full name as registered"
                     />
                     {errors.studentName && <p className="text-red-600 text-sm mt-1">{errors.studentName}</p>}
@@ -827,7 +827,7 @@ const Registration = () => {
                       value={formData.declarationDate}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     />
                     {errors.declarationDate && <p className="text-red-600 text-sm mt-1">{errors.declarationDate}</p>}
                   </div>
@@ -843,7 +843,7 @@ const Registration = () => {
                       value={formData.studentSignature}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Type your full name to sign"
                     />
                     {errors.studentSignature && <p className="text-red-600 text-sm mt-1">{errors.studentSignature}</p>}
@@ -865,7 +865,7 @@ const Registration = () => {
                       name="registrationNumber"
                       value={formData.registrationNumber}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Auto-generated"
                     />
                   </div>
@@ -880,7 +880,7 @@ const Registration = () => {
                       name="trainingStartDate"
                       value={formData.trainingStartDate}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     />
                   </div>
 
@@ -894,7 +894,7 @@ const Registration = () => {
                       name="trainer"
                       value={formData.trainer}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                       placeholder="Assigned trainer name"
                     />
                   </div>
@@ -908,7 +908,7 @@ const Registration = () => {
                       name="studentStatus"
                       value={formData.studentStatus}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none"
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none text-black"
                     >
                       <option value="Active">Active</option>
                       <option value="Completed">Completed</option>
@@ -926,7 +926,7 @@ const Registration = () => {
                       value={formData.remarks}
                       onChange={handleChange}
                       rows="2"
-                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none resize-y"
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:border-gold focus:outline-none resize-y text-black"
                       placeholder="Additional notes"
                     ></textarea>
                   </div>

@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Registration from './pages/Registration'
+import Collections from './pages/Collections'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Registration />} />
+        <Route path="/collections" element={<Collections />} />
       </Routes>
     </Layout>
   )

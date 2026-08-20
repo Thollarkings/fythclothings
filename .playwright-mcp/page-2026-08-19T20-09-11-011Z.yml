@@ -1,0 +1,65 @@
+- generic [ref=f26e2]:
+  - banner [ref=f26e3]:
+    - generic [ref=f26e4]:
+      - link "Fyth Clothings logo Fyth Clothings" [ref=f26e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f26e6]:
+          - img "Fyth Clothings logo" [ref=f26e7]
+          - generic [ref=f26e8]: Fyth
+          - generic [ref=f26e9]: Clothings
+      - navigation [ref=f26e10]:
+        - link "Home" [ref=f26e11] [cursor=pointer]:
+          - /url: /
+        - link "Collections" [ref=f26e12] [cursor=pointer]:
+          - /url: /collections
+        - link "Bespoke" [ref=f26e13] [cursor=pointer]:
+          - /url: /bespoke
+        - link "About" [ref=f26e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f26e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f26e16]:
+        - link "Student’s Registration" [ref=f26e17] [cursor=pointer]:
+          - /url: /register
+        - button "Search" [ref=f26e18]
+  - main [ref=f26e21]
+  - contentinfo [ref=f26e22]:
+    - generic [ref=f26e23]:
+      - generic [ref=f26e24]:
+        - generic [ref=f26e25]:
+          - generic [ref=f26e26]:
+            - img "Fyth Clothings" [ref=f26e27]
+            - generic [ref=f26e28]: FythClothings
+          - paragraph [ref=f26e29]: Sew • Style • Shine
+          - paragraph [ref=f26e30]: Creating beautifully crafted, quality garments and sharing practical fashion knowledge.
+        - generic [ref=f26e31]:
+          - heading "Quick Links" [level=3] [ref=f26e32]
+          - list [ref=f26e33]:
+            - listitem [ref=f26e34]:
+              - link "Home" [ref=f26e35] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f26e36]:
+              - link "About" [ref=f26e37] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f26e38]:
+              - link "Contact" [ref=f26e39] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=f26e40]:
+              - link "Register" [ref=f26e41] [cursor=pointer]:
+                - /url: /register
+        - generic [ref=f26e42]:
+          - heading "Follow Us" [level=3] [ref=f26e43]
+          - generic [ref=f26e44]:
+            - link "" [ref=f26e45] [cursor=pointer]:
+              - /url: https://www.instagram.com/fythclothings/
+            - link "" [ref=f26e47] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@fythclothings
+            - link [ref=f26e49] [cursor=pointer]:
+              - /url: https://www.threads.net/@fythclothings
+              - img "Threads" [ref=f26e50]
+            - link "" [ref=f26e51] [cursor=pointer]:
+              - /url: https://www.youtube.com/@fythclothings
+      - generic [ref=f26e54]:
+        - generic [ref=f26e55]: "Contact: founded by Ronke Faith Oyeniyi"
+        - generic [ref=f26e56]: "Email: fythclothings@gmail.com"
+      - generic [ref=f26e57]: © 2026 FYTHCLOTHINGS. All rights reserved.

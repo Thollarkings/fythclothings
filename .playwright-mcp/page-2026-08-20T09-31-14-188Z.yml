@@ -1,0 +1,355 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "Fyth Clothings logo Fyth Clothings" [ref=f1e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e6]:
+          - img "Fyth Clothings logo" [ref=f1e7]
+          - generic [ref=f1e8]: Fyth
+          - generic [ref=f1e9]: Clothings
+      - navigation [ref=f1e10]:
+        - link "Home" [ref=f1e11] [cursor=pointer]:
+          - /url: /
+        - link "Collections" [ref=f1e12] [cursor=pointer]:
+          - /url: /collections
+        - link "Bespoke" [ref=f1e13] [cursor=pointer]:
+          - /url: /bespoke
+        - link "About" [ref=f1e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f1e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f1e16]:
+        - link "Student’s Registration" [ref=f1e17] [cursor=pointer]:
+          - /url: /register
+        - button "Search" [ref=f1e18]
+  - main [ref=f1e21]:
+    - generic [ref=f1e25]:
+      - heading "Student’s Registration" [level=1] [ref=f1e26]
+      - paragraph [ref=f1e27]: Begin your journey to Sew • Style • Shine
+    - generic [ref=f1e29]:
+      - heading "TRAINING TERMS & CONDITIONS" [level=2] [ref=f1e30]
+      - generic [ref=f1e31]:
+        - generic [ref=f1e32]:
+          - heading "Registration" [level=3] [ref=f1e33]
+          - paragraph [ref=f1e34]: Registration is confirmed once the student has completed the registration process and made the agreed training payment.
+        - generic [ref=f1e35]:
+          - heading "Training Fees" [level=3] [ref=f1e36]
+          - paragraph [ref=f1e37]: Training fees are based on the programme agreed with the student. Any outstanding balance must be paid according to the agreed payment arrangement.
+        - generic [ref=f1e38]:
+          - heading "STRICT NO-REFUND POLICY" [level=3] [ref=f1e39]
+          - paragraph [ref=f1e40]: ALL PAYMENTS MADE FOR TRAINING ARE STRICTLY NON-REFUNDABLE. ONCE PAYMENT HAS BEEN MADE, NO REFUND WILL BE ISSUED, WHETHER OR NOT THE STUDENT COMPLETES THE TRAINING.
+        - generic [ref=f1e41]:
+          - heading "Materials & Tools" [level=3] [ref=f1e42]
+          - paragraph [ref=f1e43]: Students are responsible for providing their personal sewing tools, fabrics and other materials required for training unless otherwise agreed.
+        - generic [ref=f1e44]:
+          - heading "Attendance & Punctuality" [level=3] [ref=f1e45]
+          - paragraph [ref=f1e46]: Students are expected to attend scheduled classes and arrive on time. Where possible, absence should be communicated in advance.
+        - generic [ref=f1e47]:
+          - heading "Missed Classes" [level=3] [ref=f1e48]
+          - paragraph [ref=f1e49]: Missed classes do not automatically qualify for a make-up class. Any make-up arrangement is subject to the trainer's availability and approval.
+        - generic [ref=f1e50]:
+          - heading "Practice & Progress" [level=3] [ref=f1e51]
+          - paragraph [ref=f1e52]: Students are encouraged to practise between lessons. Progress depends on attendance, participation, practice and commitment.
+        - generic [ref=f1e53]:
+          - heading "Conduct" [level=3] [ref=f1e54]
+          - paragraph [ref=f1e55]: Students are expected to treat the trainer and other students with respect. Abusive, threatening or disruptive behaviour will not be accepted.
+        - generic [ref=f1e56]:
+          - heading "Training Content" [level=3] [ref=f1e57]
+          - paragraph [ref=f1e58]: Training content may be adjusted according to the student's level, progress, learning needs and agreed programme.
+        - generic [ref=f1e59]:
+          - heading "Photos & Videos" [level=3] [ref=f1e60]
+          - paragraph [ref=f1e61]: Students may be photographed or recorded during training for documentation or promotional purposes only where consent has been given.
+        - generic [ref=f1e62]:
+          - heading "Personal Belongings" [level=3] [ref=f1e63]
+          - paragraph [ref=f1e64]: Students are responsible for their personal belongings, sewing equipment and other items brought to the training venue.
+        - generic [ref=f1e65]:
+          - heading "Agreement" [level=3] [ref=f1e66]
+          - paragraph [ref=f1e67]: By signing below, the student confirms that they have read, understood and agreed to these terms and conditions, including the strict no-refund policy.
+      - generic [ref=f1e69] [cursor=pointer]:
+        - checkbox "I have read, understood and agree to the Training Terms & Conditions above, including the STRICT NO-REFUND POLICY. *" [checked] [active] [ref=f1e70]
+        - generic [ref=f1e71]: I have read, understood and agree to the Training Terms & Conditions above, including the STRICT NO-REFUND POLICY. *
+      - generic [ref=f1e108]:
+        - heading "Registration Form" [level=3] [ref=f1e111]
+        - generic [ref=f1e114]:
+          - generic [ref=f1e115]:
+            - heading "1. PERSONAL INFORMATION" [level=2] [ref=f1e116]
+            - generic [ref=f1e117]:
+              - generic [ref=f1e118]:
+                - generic [ref=f1e119]: Full Name *
+                - textbox "Full Name *" [ref=f1e120]:
+                  - /placeholder: Enter your full name
+              - generic [ref=f1e121]:
+                - generic [ref=f1e122]: Phone / WhatsApp *
+                - textbox "Phone / WhatsApp *" [ref=f1e123]:
+                  - /placeholder: +234 XXX XXX XXXX
+              - generic [ref=f1e124]:
+                - generic [ref=f1e125]: Email Address *
+                - textbox "Email Address *" [ref=f1e126]:
+                  - /placeholder: your@email.com
+              - generic [ref=f1e127]:
+                - generic [ref=f1e128]: Date of Birth
+                - textbox "Date of Birth" [ref=f1e129]
+              - generic [ref=f1e130]:
+                - generic [ref=f1e131]: Residential Address
+                - textbox "Residential Address" [ref=f1e132]:
+                  - /placeholder: Your full address
+              - generic [ref=f1e133]:
+                - generic [ref=f1e134]: Occupation
+                - textbox "Occupation" [ref=f1e135]:
+                  - /placeholder: Your current occupation
+              - generic [ref=f1e136]:
+                - generic [ref=f1e137]: Emergency Contact Name *
+                - textbox "Emergency Contact Name *" [ref=f1e138]:
+                  - /placeholder: Contact person's name
+              - generic [ref=f1e139]:
+                - generic [ref=f1e140]: Emergency Contact Phone *
+                - textbox "Emergency Contact Phone *" [ref=f1e141]:
+                  - /placeholder: +234 XXX XXX XXXX
+          - generic [ref=f1e142]:
+            - heading "2. SEWING EXPERIENCE" [level=2] [ref=f1e143]
+            - generic [ref=f1e144]:
+              - generic [ref=f1e145]:
+                - generic [ref=f1e146]: Have you learnt sewing before? *
+                - generic [ref=f1e147]:
+                  - generic [ref=f1e148]:
+                    - radio "Yes" [ref=f1e149]
+                    - text: "Yes"
+                  - generic [ref=f1e150]:
+                    - radio "No" [ref=f1e151]
+                    - text: "No"
+              - generic [ref=f1e152]:
+                - generic [ref=f1e153]: Current Level *
+                - combobox "Current Level *" [ref=f1e154]:
+                  - option "Select your level" [selected]
+                  - option "Beginner"
+                  - option "Intermediate"
+                  - option "Advanced"
+              - generic [ref=f1e155]:
+                - generic [ref=f1e156]: What can you currently sew?
+                - textbox "What can you currently sew?" [ref=f1e157]:
+                  - /placeholder: Describe your current sewing abilities and projects
+          - generic [ref=f1e158]:
+            - heading "3. TRAINING INTEREST" [level=2] [ref=f1e159]
+            - generic [ref=f1e160]:
+              - generic [ref=f1e161]:
+                - generic [ref=f1e162]: "Select areas you would like to learn: *"
+                - generic [ref=f1e163]:
+                  - generic [ref=f1e164]:
+                    - checkbox "Basic Sewing Pattern Drafting" [ref=f1e165]
+                    - generic [ref=f1e166]: Basic Sewing Pattern Drafting
+                  - generic [ref=f1e167]:
+                    - checkbox "Cutting & Sewing" [ref=f1e168]
+                    - generic [ref=f1e169]: Cutting & Sewing
+                  - generic [ref=f1e170]:
+                    - checkbox "Bustier / Corset Dressmaking" [ref=f1e171]
+                    - generic [ref=f1e172]: Bustier / Corset Dressmaking
+                  - generic [ref=f1e173]:
+                    - checkbox "Dressmaking" [ref=f1e174]
+                    - generic [ref=f1e175]: Dressmaking
+                  - generic [ref=f1e176]:
+                    - checkbox "Blouse" [ref=f1e177]
+                    - generic [ref=f1e178]: Blouse
+                  - generic [ref=f1e179]:
+                    - checkbox "Trousers" [ref=f1e180]
+                    - generic [ref=f1e181]: Trousers
+                  - generic [ref=f1e182]:
+                    - checkbox "Children's Wear" [ref=f1e183]
+                    - generic [ref=f1e184]: Children's Wear
+                  - generic [ref=f1e185]:
+                    - checkbox "Men's Wear" [ref=f1e186]
+                    - generic [ref=f1e187]: Men's Wear
+                  - generic [ref=f1e188]:
+                    - checkbox "Finishing Techniques" [ref=f1e189]
+                    - generic [ref=f1e190]: Finishing Techniques
+                  - generic [ref=f1e191]:
+                    - checkbox "Fashion Business" [ref=f1e192]
+                    - generic [ref=f1e193]: Fashion Business
+                  - generic [ref=f1e194]:
+                    - checkbox "Other" [ref=f1e195]
+                    - generic [ref=f1e196]: Other
+                - paragraph [ref=f1e197]: Please select at least one training area
+              - generic [ref=f1e198]:
+                - generic [ref=f1e199]: Main Goal for the Training *
+                - textbox "Main Goal for the Training *" [ref=f1e200]:
+                  - /placeholder: Describe what you hope to achieve through this training
+          - generic [ref=f1e201]:
+            - heading "4. TRAINING DETAILS" [level=2] [ref=f1e202]
+            - generic [ref=f1e203]:
+              - generic [ref=f1e204]:
+                - generic [ref=f1e205]: Preferred Training Type *
+                - combobox "Preferred Training Type *" [ref=f1e206]:
+                  - option "Select training type" [selected]
+                  - option "In-person"
+                  - option "Online"
+                  - option "One-on-One"
+                  - option "Group"
+              - generic [ref=f1e207]:
+                - generic [ref=f1e208]: Preferred Days *
+                - combobox "Preferred Days *" [ref=f1e209]:
+                  - option "Select preferred days" [selected]
+                  - option "Monday"
+                  - option "Tuesday"
+                  - option "Wednesday"
+                  - option "Thursday"
+                  - option "Friday"
+                  - option "Saturday"
+                  - option "Sunday"
+                  - option "Flexible"
+              - generic [ref=f1e210]:
+                - generic [ref=f1e211]: Preferred Time *
+                - combobox "Preferred Time *" [ref=f1e212]:
+                  - option "Select preferred time" [selected]
+                  - option "Morning (9AM - 12PM)"
+                  - option "Afternoon (1PM - 5PM)"
+                  - option "Evening (5PM - 9PM)"
+                  - option "Flexible"
+              - generic [ref=f1e213]:
+                - generic [ref=f1e214]: Preferred Duration *
+                - combobox "Preferred Duration *" [ref=f1e215]:
+                  - option "Select duration" [selected]
+                  - option "1 month"
+                  - option "3 months"
+                  - option "6 months"
+                  - option "12 months"
+                  - option "Flexible"
+          - generic [ref=f1e216]:
+            - heading "5. TOOLS & MATERIALS" [level=2] [ref=f1e217]
+            - generic [ref=f1e218]:
+              - generic [ref=f1e219]:
+                - generic [ref=f1e220]: Own sewing machine? *
+                - generic [ref=f1e221]:
+                  - generic [ref=f1e222]:
+                    - radio "Yes" [ref=f1e223]
+                    - text: "Yes"
+                  - generic [ref=f1e224]:
+                    - radio "No" [ref=f1e225]
+                    - text: "No"
+              - generic [ref=f1e226]:
+                - generic [ref=f1e227]: Basic sewing tools? *
+                - generic [ref=f1e228]:
+                  - generic [ref=f1e229]:
+                    - radio "Yes" [ref=f1e230]
+                    - text: "Yes"
+                  - generic [ref=f1e231]:
+                    - radio "No" [ref=f1e232]
+                    - text: "No"
+              - generic [ref=f1e233]:
+                - generic [ref=f1e234]: Can provide materials? *
+                - generic [ref=f1e235]:
+                  - generic [ref=f1e236]:
+                    - radio "Yes" [ref=f1e237]
+                    - text: "Yes"
+                  - generic [ref=f1e238]:
+                    - radio "No" [ref=f1e239]
+                    - text: "No"
+          - generic [ref=f1e240]:
+            - heading "6. PAYMENT INFORMATION" [level=2] [ref=f1e241]
+            - generic [ref=f1e242]:
+              - generic [ref=f1e243]:
+                - generic [ref=f1e244]: Training Fee (₦) *
+                - spinbutton "Training Fee (₦) *" [ref=f1e245]
+              - generic [ref=f1e246]:
+                - generic [ref=f1e247]: Amount Paid (₦) *
+                - spinbutton "Amount Paid (₦) *" [ref=f1e248]
+              - generic [ref=f1e249]:
+                - generic [ref=f1e250]: Balance (₦)
+                - textbox "Balance (₦)" [ref=f1e251]:
+                  - /placeholder: Balance will be calculated
+                  - text: ₦0.00
+              - generic [ref=f1e252]:
+                - generic [ref=f1e253]: Payment Date *
+                - textbox "Payment Date *" [ref=f1e254]
+              - generic [ref=f1e255]:
+                - generic [ref=f1e256]: Payment Method *
+                - combobox "Payment Method *" [ref=f1e257]:
+                  - option "Select payment method" [selected]
+                  - option "Transfer"
+                  - option "Cash"
+                  - option "Other"
+          - generic [ref=f1e258]:
+            - heading "7. STUDENT DECLARATION" [level=2] [ref=f1e259]
+            - generic [ref=f1e261]:
+              - paragraph [ref=f1e262]: I confirm that the information I have provided is correct.
+              - paragraph [ref=f1e263]: I understand that learning to sew requires commitment, practice, patience and consistency.
+              - paragraph [ref=f1e264]: I agree to follow the training guidelines of FYTHCLOTHINGS and understand that my progress depends on my attendance, practice and dedication.
+              - paragraph [ref=f1e265]: I also understand and agree to the Training Terms & Conditions provided with this registration form.
+            - generic [ref=f1e267] [cursor=pointer]:
+              - checkbox "I have read and agree to the student declaration above, including the Training Terms & Conditions. *" [ref=f1e268]
+              - generic [ref=f1e269]: I have read and agree to the student declaration above, including the Training Terms & Conditions. *
+            - generic [ref=f1e270]:
+              - generic [ref=f1e271]:
+                - generic [ref=f1e272]: Student Name *
+                - textbox "Student Name *" [ref=f1e273]:
+                  - /placeholder: Enter your full name as registered
+              - generic [ref=f1e274]:
+                - generic [ref=f1e275]: Date *
+                - textbox "Date *" [ref=f1e276]
+              - generic [ref=f1e277]:
+                - generic [ref=f1e278]: Student Signature / Full Name as Signature *
+                - textbox "Student Signature / Full Name as Signature *" [ref=f1e279]:
+                  - /placeholder: Type your full name to sign
+          - generic [ref=f1e280]:
+            - heading "For FYTHCLOTHINGS Use Only" [level=3] [ref=f1e281]
+            - generic [ref=f1e282]:
+              - generic [ref=f1e283]:
+                - generic [ref=f1e284]: Registration Number
+                - textbox "Registration Number" [ref=f1e285]:
+                  - /placeholder: Auto-generated
+              - generic [ref=f1e286]:
+                - generic [ref=f1e287]: Training Start Date
+                - textbox "Training Start Date" [ref=f1e288]
+              - generic [ref=f1e289]:
+                - generic [ref=f1e290]: Trainer
+                - textbox "Trainer" [ref=f1e291]:
+                  - /placeholder: Assigned trainer name
+              - generic [ref=f1e292]:
+                - generic [ref=f1e293]: Student Status
+                - combobox "Student Status" [ref=f1e294]:
+                  - option "Active" [selected]
+                  - option "Completed"
+                  - option "Withdrawn"
+              - generic [ref=f1e295]:
+                - generic [ref=f1e296]: Remarks
+                - textbox "Remarks" [ref=f1e297]:
+                  - /placeholder: Additional notes
+          - button "Submit Registration" [ref=f1e299]
+  - contentinfo [ref=f1e72]:
+    - generic [ref=f1e73]:
+      - generic [ref=f1e74]:
+        - generic [ref=f1e75]:
+          - generic [ref=f1e76]:
+            - img "Fyth Clothings" [ref=f1e77]
+            - generic [ref=f1e78]: FythClothings
+          - paragraph [ref=f1e79]: Sew • Style • Shine
+          - paragraph [ref=f1e80]: Creating beautifully crafted, quality garments and sharing practical fashion knowledge.
+        - generic [ref=f1e81]:
+          - heading "Quick Links" [level=3] [ref=f1e82]
+          - list [ref=f1e83]:
+            - listitem [ref=f1e84]:
+              - link "Home" [ref=f1e85] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f1e86]:
+              - link "About" [ref=f1e87] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f1e88]:
+              - link "Contact" [ref=f1e89] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=f1e90]:
+              - link "Register" [ref=f1e91] [cursor=pointer]:
+                - /url: /register
+        - generic [ref=f1e92]:
+          - heading "Follow Us" [level=3] [ref=f1e93]
+          - generic [ref=f1e94]:
+            - link "" [ref=f1e95] [cursor=pointer]:
+              - /url: https://www.instagram.com/fythclothings/
+            - link "" [ref=f1e97] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@fythclothings
+            - link [ref=f1e99] [cursor=pointer]:
+              - /url: https://www.threads.net/@fythclothings
+              - img "Threads" [ref=f1e100]
+            - link "" [ref=f1e101] [cursor=pointer]:
+              - /url: https://www.youtube.com/@fythclothings
+      - generic [ref=f1e104]:
+        - generic [ref=f1e105]: "Contact: founded by Ronke Faith Oyeniyi"
+        - generic [ref=f1e106]: "Email: fythclothings@gmail.com"
+      - generic [ref=f1e107]: © 2026 FYTHCLOTHINGS. All rights reserved.

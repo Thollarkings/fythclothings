@@ -52,7 +52,7 @@ const Header = () => {
             to="/register"
             className="bg-gradient-to-r from-pink to-[#9d174d] text-white font-bold py-2 px-5 rounded-full text-xs uppercase tracking-wide hover:opacity-90 transition-opacity shadow-lg shadow-pink/30"
           >
-            Register Now
+            Student&rsquo;s Registration
           </Link>
           <button
             className="p-2 text-slate-600 hover:text-pink transition-colors"

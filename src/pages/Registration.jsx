@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import SEO from '../components/SEO'
 import { sendAdminNotification, sendUserConfirmation } from '../services/email'
+import { generateRegistrationPDF } from '../utils/pdfGenerator'
 
 const Registration = () => {
   const [formData, setFormData] = useState({
@@ -59,6 +60,7 @@ const Registration = () => {
   const [errors, setErrors] = useState({})
   const [submitStatus, setSubmitStatus] = useState('idle') // idle | loading | success | error
   const [submitError, setSubmitError] = useState('')
+  const [hasAcknowledgedTerms, setHasAcknowledgedTerms] = useState(false)
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
@@ -105,6 +107,10 @@ const Registration = () => {
     if (!formData.declarationConsent) {
       newErrors.declarationConsent = 'You must agree to the student declaration to continue'
     }
+
+    if (!hasAcknowledgedTerms) {
+      newErrors.termsAcknowledgement = 'You must acknowledge and agree to the Training Terms & Conditions before proceeding'
+    }
     
     // Email validation
     if (formData.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(formData.email)) {
@@ -121,14 +127,34 @@ const Registration = () => {
     if (Object.keys(newErrors).length === 0) {
       setSubmitStatus('loading')
       try {
-        await sendAdminNotification(formData)
-        await sendUserConfirmation(formData)
-        setSubmitStatus('success')
+        const adminPromise = sendAdminNotification(formData).catch((err) => {
+          console.error('Admin notification failed:', err)
+        })
+
+        const userPromise = sendUserConfirmation(formData).catch((err) => {
+          console.error('User confirmation failed:', err)
+          throw err
+        })
+
+        await Promise.all([adminPromise, userPromise])
       } catch (error) {
-        console.error('Email send failed:', error)
-        setSubmitError('Registration saved, but email notification failed. We will contact you shortly.')
+        setSubmitError('Registration saved, but confirmation email failed. We will contact you shortly.')
         setSubmitStatus('error')
+        return
       }
+
+      // Generate and download PDF for user's records
+      const pdfBlob = generateRegistrationPDF(formData)
+      const url = URL.createObjectURL(pdfBlob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `fyth-registration-${formData.fullName.replace(/\s+/g, '-').toLowerCase()}.pdf`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      URL.revokeObjectURL(url)
+
+      setSubmitStatus('success')
     } else {
       setSubmitStatus('error')
       setSubmitError('Please fill in all required fields')
@@ -172,10 +198,15 @@ const Registration = () => {
       />
 
       {/* Hero Banner */}
-      <section className="bg-black text-white py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+      <section className="relative bg-black text-white py-32">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/studentregistrationpage.jpeg)' }}
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
-            Student Registration
+            Student&rsquo;s Registration
           </h1>
           <p className="text-xl md:text-2xl text-gold font-light">
             Begin your journey to Sew • Style • Shine
@@ -183,11 +214,88 @@ const Registration = () => {
         </div>
       </section>
 
-      {/* Registration Form */}
-      <section className="py-20 bg-cream">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
-            <form onSubmit={handleSubmit} className="space-y-12">
+      {/* Training Terms & Conditions */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-black mb-8 text-center">
+            TRAINING TERMS & CONDITIONS
+          </h2>
+          <div className="bg-cream border-2 border-gold p-8 md:p-12 rounded-lg space-y-6 text-gray-800">
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Registration</h3>
+              <p>Registration is confirmed once the student has completed the registration process and made the agreed training payment.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Training Fees</h3>
+              <p>Training fees are based on the programme agreed with the student. Any outstanding balance must be paid according to the agreed payment arrangement.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-red-700 mb-2">STRICT NO-REFUND POLICY</h3>
+              <p className="font-semibold text-black">ALL PAYMENTS MADE FOR TRAINING ARE STRICTLY NON-REFUNDABLE. ONCE PAYMENT HAS BEEN MADE, NO REFUND WILL BE ISSUED, WHETHER OR NOT THE STUDENT COMPLETES THE TRAINING.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Materials & Tools</h3>
+              <p>Students are responsible for providing their personal sewing tools, fabrics and other materials required for training unless otherwise agreed.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Attendance & Punctuality</h3>
+              <p>Students are expected to attend scheduled classes and arrive on time. Where possible, absence should be communicated in advance.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Missed Classes</h3>
+              <p>Missed classes do not automatically qualify for a make-up class. Any make-up arrangement is subject to the trainer&apos;s availability and approval.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Practice & Progress</h3>
+              <p>Students are encouraged to practise between lessons. Progress depends on attendance, participation, practice and commitment.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Conduct</h3>
+              <p>Students are expected to treat the trainer and other students with respect. Abusive, threatening or disruptive behaviour will not be accepted.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Training Content</h3>
+              <p>Training content may be adjusted according to the student&apos;s level, progress, learning needs and agreed programme.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Photos & Videos</h3>
+              <p>Students may be photographed or recorded during training for documentation or promotional purposes only where consent has been given.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Personal Belongings</h3>
+              <p>Students are responsible for their personal belongings, sewing equipment and other items brought to the training venue.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-black mb-2">Agreement</h3>
+              <p>By signing below, the student confirms that they have read, understood and agreed to these terms and conditions, including the strict no-refund policy.</p>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-white border-2 border-gold p-6 rounded-lg">
+            <label className="flex items-start gap-4 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={hasAcknowledgedTerms}
+                onChange={(e) => setHasAcknowledgedTerms(e.target.checked)}
+                className="mt-1 h-6 w-6 rounded border-gray-300 text-gold focus:ring-gold"
+              />
+              <span className="text-base font-medium text-gray-800">
+                I have read, understood and agree to the Training Terms & Conditions above, including the STRICT NO-REFUND POLICY. <span className="text-red-600">*</span>
+              </span>
+            </label>
+            {errors.termsAcknowledgement && <p className="text-red-600 text-sm mt-2">{errors.termsAcknowledgement}</p>}
+          </div>
+
+          {hasAcknowledgedTerms && (
+            <div className="mt-12">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="h-px flex-1 bg-gold"></div>
+                <h3 className="text-2xl font-bold text-black">Registration Form</h3>
+                <div className="h-px flex-1 bg-gold"></div>
+              </div>
+
+               <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
+                 <form onSubmit={handleSubmit} className="space-y-12">
               {/* 1. Personal Information */}
               <div>
                 <h2 className="text-3xl font-bold text-black mb-8 pb-4 border-b-4 border-gold">
@@ -947,7 +1055,7 @@ const Registration = () => {
               {submitStatus === 'success' && (
                 <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
                   <p className="text-green-800 font-medium">Registration submitted successfully!</p>
-                  <p className="text-green-700 text-sm mt-1">A confirmation email has been sent to your inbox.</p>
+                  <p className="text-green-700 text-sm mt-1">"A confirmation email has been sent to your inbox. Please check your spam folder if you don't see it. Also find your registration details in the downloaded PDF."</p>
                 </div>
               )}
 
@@ -957,7 +1065,9 @@ const Registration = () => {
                 </div>
               )}
             </form>
-          </div>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

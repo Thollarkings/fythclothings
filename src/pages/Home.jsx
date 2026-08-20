@@ -123,8 +123,8 @@ const Home = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-wide drop-shadow-md">
                         FYTHCLOTHINGS
                     </h1>
-                    <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold text-orange-200 mb-4 tracking-wide drop-shadow-md">
-                        Elevate Your Style 
+                    <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#c9a227] to-black mb-4 tracking-wide drop-shadow-md">
+                        Elevate Your Style
                     </h1>
 
                     <p className="text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed text-white drop-shadow-lg">
@@ -134,7 +134,7 @@ const Home = () => {
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <Link
-                            to="/register"
+                            to="/collections"
                             className="inline-flex items-center gap-2 bg-gradient-to-r from-pink to-[#9d174d] text-white font-bold py-3 px-8 rounded-full text-sm uppercase tracking-wide hover:opacity-90 transition-opacity shadow-lg shadow-pink/30"
                         >
                             Start Your Journey
@@ -183,7 +183,7 @@ const Home = () => {
                                 className="text-center"
                                 ref={(el) => (sectionRefs.current[`stat-${i}`] = el)}
                             >
-                                <div className={`text-3xl md:text-4xl font-bold text-gold transition-all duration-700 ${
+                                <div className={`text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#c9a227] to-black transition-all duration-700 ${
                                     isVisible[`stat-${i}`] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
                                 }`}>
                                     {stat.number}

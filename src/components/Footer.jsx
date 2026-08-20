@@ -53,14 +53,17 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Follow Us</h3>
             <div className="flex gap-4">
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink hover:bg-white/10 transition-colors">
+              <a href="https://www.instagram.com/fythclothings/" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink hover:bg-white/10 transition-colors">
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink hover:bg-white/10 transition-colors">
-                <i className="fa-brands fa-pinterest"></i>
+              <a href="https://www.tiktok.com/@fythclothings" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink hover:bg-white/10 transition-colors">
+                <i className="fa-brands fa-tiktok"></i>
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink hover:bg-white/10 transition-colors">
-                <i className="fa-brands fa-facebook-f"></i>
+              <a href="https://www.threads.net/@fythclothings" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink hover:bg-white/10 transition-colors">
+                <img src="/threads.png" alt="Threads" className="w-4 h-4 object-contain" />
+              </a>
+              <a href="https://www.youtube.com/@fythclothings" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-pink hover:bg-white/10 transition-colors">
+                <i className="fa-brands fa-youtube"></i>
               </a>
             </div>
           </div>
@@ -75,11 +78,7 @@ const Footer = () => {
             </div>
             <div>
               <span className="font-medium text-gray-300">Email:</span>{' '}
-              info@fythclothings.com
-            </div>
-            <div>
-              <span className="font-medium text-gray-300">Phone/WhatsApp:</span>{' '}
-              +234 800 FYTHCLOTH
+              fythclothings@gmail.com
             </div>
           </div>
         </div>

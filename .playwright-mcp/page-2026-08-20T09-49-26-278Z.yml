@@ -1,0 +1,110 @@
+- generic [ref=f2e2]:
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - link "Fyth Clothings logo Fyth Clothings" [ref=f2e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e6]:
+          - img "Fyth Clothings logo" [ref=f2e7]
+          - generic [ref=f2e8]: Fyth
+          - generic [ref=f2e9]: Clothings
+      - navigation [ref=f2e10]:
+        - link "Home" [ref=f2e11] [cursor=pointer]:
+          - /url: /
+        - link "Collections" [ref=f2e12] [cursor=pointer]:
+          - /url: /collections
+        - link "Bespoke" [ref=f2e13] [cursor=pointer]:
+          - /url: /bespoke
+        - link "About" [ref=f2e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f2e15] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f2e16]:
+        - link "Student’s Registration" [ref=f2e17] [cursor=pointer]:
+          - /url: /register
+        - button "Search" [ref=f2e18]
+  - main [ref=f2e21]:
+    - generic [ref=f2e25]:
+      - heading "Student’s Registration" [level=1] [ref=f2e26]
+      - paragraph [ref=f2e27]: Begin your journey to Sew • Style • Shine
+    - generic [ref=f2e29]:
+      - heading "TRAINING TERMS & CONDITIONS" [level=2] [ref=f2e30]
+      - generic [ref=f2e31]:
+        - generic [ref=f2e32]:
+          - heading "Registration" [level=3] [ref=f2e33]
+          - paragraph [ref=f2e34]: Registration is confirmed once the student has completed the registration process and made the agreed training payment.
+        - generic [ref=f2e35]:
+          - heading "Training Fees" [level=3] [ref=f2e36]
+          - paragraph [ref=f2e37]: Training fees are based on the programme agreed with the student. Any outstanding balance must be paid according to the agreed payment arrangement.
+        - generic [ref=f2e38]:
+          - heading "STRICT NO-REFUND POLICY" [level=3] [ref=f2e39]
+          - paragraph [ref=f2e40]: ALL PAYMENTS MADE FOR TRAINING ARE STRICTLY NON-REFUNDABLE. ONCE PAYMENT HAS BEEN MADE, NO REFUND WILL BE ISSUED, WHETHER OR NOT THE STUDENT COMPLETES THE TRAINING.
+        - generic [ref=f2e41]:
+          - heading "Materials & Tools" [level=3] [ref=f2e42]
+          - paragraph [ref=f2e43]: Students are responsible for providing their personal sewing tools, fabrics and other materials required for training unless otherwise agreed.
+        - generic [ref=f2e44]:
+          - heading "Attendance & Punctuality" [level=3] [ref=f2e45]
+          - paragraph [ref=f2e46]: Students are expected to attend scheduled classes and arrive on time. Where possible, absence should be communicated in advance.
+        - generic [ref=f2e47]:
+          - heading "Missed Classes" [level=3] [ref=f2e48]
+          - paragraph [ref=f2e49]: Missed classes do not automatically qualify for a make-up class. Any make-up arrangement is subject to the trainer's availability and approval.
+        - generic [ref=f2e50]:
+          - heading "Practice & Progress" [level=3] [ref=f2e51]
+          - paragraph [ref=f2e52]: Students are encouraged to practise between lessons. Progress depends on attendance, participation, practice and commitment.
+        - generic [ref=f2e53]:
+          - heading "Conduct" [level=3] [ref=f2e54]
+          - paragraph [ref=f2e55]: Students are expected to treat the trainer and other students with respect. Abusive, threatening or disruptive behaviour will not be accepted.
+        - generic [ref=f2e56]:
+          - heading "Training Content" [level=3] [ref=f2e57]
+          - paragraph [ref=f2e58]: Training content may be adjusted according to the student's level, progress, learning needs and agreed programme.
+        - generic [ref=f2e59]:
+          - heading "Photos & Videos" [level=3] [ref=f2e60]
+          - paragraph [ref=f2e61]: Students may be photographed or recorded during training for documentation or promotional purposes only where consent has been given.
+        - generic [ref=f2e62]:
+          - heading "Personal Belongings" [level=3] [ref=f2e63]
+          - paragraph [ref=f2e64]: Students are responsible for their personal belongings, sewing equipment and other items brought to the training venue.
+        - generic [ref=f2e65]:
+          - heading "Agreement" [level=3] [ref=f2e66]
+          - paragraph [ref=f2e67]: By signing below, the student confirms that they have read, understood and agreed to these terms and conditions, including the strict no-refund policy.
+      - generic [ref=f2e69] [cursor=pointer]:
+        - checkbox "I have read, understood and agree to the Training Terms & Conditions above, including the STRICT NO-REFUND POLICY. *" [ref=f2e70]
+        - generic [ref=f2e71]: I have read, understood and agree to the Training Terms & Conditions above, including the STRICT NO-REFUND POLICY. *
+  - contentinfo [ref=f2e72]:
+    - generic [ref=f2e73]:
+      - generic [ref=f2e74]:
+        - generic [ref=f2e75]:
+          - generic [ref=f2e76]:
+            - img "Fyth Clothings" [ref=f2e77]
+            - generic [ref=f2e78]: FythClothings
+          - paragraph [ref=f2e79]: Sew • Style • Shine
+          - paragraph [ref=f2e80]: Creating beautifully crafted, quality garments and sharing practical fashion knowledge.
+        - generic [ref=f2e81]:
+          - heading "Quick Links" [level=3] [ref=f2e82]
+          - list [ref=f2e83]:
+            - listitem [ref=f2e84]:
+              - link "Home" [ref=f2e85] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f2e86]:
+              - link "About" [ref=f2e87] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f2e88]:
+              - link "Contact" [ref=f2e89] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=f2e90]:
+              - link "Register" [ref=f2e91] [cursor=pointer]:
+                - /url: /register
+        - generic [ref=f2e92]:
+          - heading "Follow Us" [level=3] [ref=f2e93]
+          - generic [ref=f2e94]:
+            - link "" [ref=f2e95] [cursor=pointer]:
+              - /url: https://www.instagram.com/fythclothings/
+            - link "" [ref=f2e97] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@fythclothings
+            - link [ref=f2e99] [cursor=pointer]:
+              - /url: https://www.threads.net/@fythclothings
+              - img "Threads" [ref=f2e100]
+            - link "" [ref=f2e101] [cursor=pointer]:
+              - /url: https://www.youtube.com/@fythclothings
+      - generic [ref=f2e104]:
+        - generic [ref=f2e105]: "Contact: founded by Ronke Faith Oyeniyi"
+        - generic [ref=f2e106]: "Email: fythclothings@gmail.com"
+      - generic [ref=f2e107]: © 2026 FYTHCLOTHINGS. All rights reserved.

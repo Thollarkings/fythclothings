@@ -1,31 +1,13 @@
+import { useForm } from '@formspree/react'
 import { useState } from 'react'
 import SEO from '../components/SEO'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  })
+  const [state, handleSubmit] = useForm('mrpzjgwa')
+  const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('Contact form submitted:', formData)
-    alert('Thank you! Your message has been sent. We will respond shortly.')
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-    })
+  if (state.succeeded && !submitted) {
+    setSubmitted(true)
   }
 
   return (
@@ -161,8 +143,6 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="Your name"
@@ -180,8 +160,6 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="your@email.com"
@@ -199,8 +177,6 @@ const Contact = () => {
                     type="tel"
                     id="phone"
                     name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="+234 XXX XXX XXXX"
                   />
@@ -217,8 +193,6 @@ const Contact = () => {
                     type="text"
                     id="subject"
                     name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none text-black"
                     placeholder="How can we help?"
@@ -235,8 +209,6 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     required
                     rows="6"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-pink focus:outline-none resize-y"
@@ -246,10 +218,24 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-pink text-white font-bold py-3 px-6 rounded-full hover:bg-pink/90 transition shadow-lg shadow-pink/30"
+                  disabled={state.submitting}
+                  className="w-full bg-pink text-white font-bold py-3 px-6 rounded-full hover:bg-pink/90 transition shadow-lg shadow-pink/30 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {state.submitting ? 'Sending...' : 'Send Message'}
                 </button>
+
+                {state.succeeded && (
+                  <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
+                    <p className="text-green-800 font-medium">Message sent successfully!</p>
+                    <p className="text-green-700 text-sm mt-1">Thank you for reaching out. A confirmation email has been sent to your inbox, if not in the inbox please check your spam folder.</p>
+                  </div>
+                )}
+
+                {state.errors && state.errors.length > 0 && (
+                  <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg text-center">
+                    <p className="text-red-800 font-medium">Failed to send message. Please try again later.</p>
+                  </div>
+                )}
               </form>
             </div>
           </div>
